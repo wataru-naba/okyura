@@ -1,13 +1,33 @@
 @import url('./root.css');
+body{
+    font-size: 1.7rem;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: var(--color-black);
+}
 img{
     max-width: 100%;
 }
 [class*=inner]{
-    max-width: 1040px;
+    max-width: 980px;
     padding:0 20px;
     justify-content: space-between;
 }
 
+.topPage{
+    text-align: center;
+    padding: 40px 20px;
+}
+.topPage a{
+    display: inline-block;
+    background: var(--color-skyblue);
+    padding:10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+    .topPage a:hover{
+        background: var(--color-blue);
+    }
 /* header
 -------------------------*/
 .header-inner{
@@ -236,4 +256,25 @@ ul.footer-nav-list{
     color: #fff;
     text-align: center;
     padding: 10px 20px;
+}
+
+/*pageTop
+-----------------*/
+.pageTop{
+    position:fixed;
+    right:40px;
+    bottom:40px;
+    cursor:pointer;
+    z-index:3;
+    opacity: 0;
+}
+.pageTop img{width:60px;}
+.pageTop.active{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width:767px){
+	.pageTop{right:15px;bottom: 60px;}
+	.pageTop img{width:60px;}
 }
