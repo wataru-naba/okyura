@@ -1,0 +1,288 @@
+@import url('./root.css');
+figure{
+    padding: 0;
+    margin: 0;
+}
+[class*=pageHeader]{
+    background: url('../images/bk_stripe.svg');
+    background-size: auto 400px;
+    padding:40px 20px;
+    margin-bottom: 40px;
+}
+
+[class*=pageHeader] h1{
+    text-align: center;
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+[class*=h-ribon]{
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 2.4rem;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+[class*=h-ribon]::before{
+    content: '';
+    width: 100%;
+    padding-bottom:5%;
+    position: absolute;
+    background: url('../images/ribbon_left.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left;
+}
+[class*=h-ribon]::after{
+    content: '';
+    width: 100%;
+    padding-bottom:5%;
+    position: absolute;
+    background: url('../images/ribbon_right.png') no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+}
+
+[class*=-comparison]{
+    display: flex;
+    justify-content: stretch;
+}
+
+[class*=-comparison] > div{
+    flex-basis: calc(50% - 1.5%);
+    margin-right: 3%;
+    background: var(--color-lightbule);
+    border-radius: 15px;
+    padding:20px 10px;
+}
+    [class*=-comparison] > div:nth-child(2n){
+        margin-right: 0;
+    }
+    [class*=-comparison] > div img.icon{
+        display: block;
+        width: 70px;
+        margin: 0 auto 20px;
+    }
+/*page beginner
+---------------------*/
+/*page beginner / merit
+-------------------------------*/
+.beginner-merit{
+    margin-bottom: 40px;
+}
+.beginner-merit-inner{
+    max-width: 680px;
+}
+ul.merit-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:stretch;
+}   
+    ul.merit-list li{
+        margin-right: 1%;
+        margin-bottom: 1%;
+        flex-basis: calc(50% - (1% - 0.5%));
+        color: var(--color-naivy);
+
+    }
+    ul.merit-list li:nth-child(2n){
+        margin-right: 0;
+    }
+    ul.merit-list li figure{
+        display: flex;
+        align-items: center;
+        height: 120px;
+    }
+    ul.merit-list li figure img{
+        width: 70%;
+    }
+    ul.merit-list li p{
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+    ul.merit-list li h4{
+        font-size: 2.4rem;
+    }
+
+/*page beginner / softHead
+-------------------------------*/
+section.beginner-softHead{
+    margin-bottom: 40px;
+}
+.beginner-softHead-inner{
+    max-width: 810px;
+}   
+    .softHead-comparison{
+        text-align: center;
+    }
+    .softHead-comparison figure{
+        max-width: 250px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 10px;
+        background-color: #80C8EF;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .softHead-comparison ul {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .softHead-comparison ul > li{
+        font-size: 1.4rem;
+        text-align: left;
+        padding-left: 15px;
+        position: relative;
+        margin-bottom: 5px;
+    }
+    .softHead-comparison ul > li::before{
+        content: '◉';
+        position: absolute;
+        left: 0;
+    }
+
+/*page beginner / contactType
+-------------------------------*/
+
+section.beginner-contactType{
+    margin-bottom: 40px;
+}
+.beginner-contactType-inner{
+    max-width: 810px;
+}   
+    .contactType-comparison > div{
+        padding: 30px 7%;   
+    }
+    .contactType-comparison h3{
+        background-color: #80C8EF;
+        border-radius: 5px;
+        text-align: center;
+        padding: 8px 5px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .contactType-comparison dl{
+        margin-bottom: 10px;
+    }
+    .contactType-comparison dl > dt{
+        color: var(--color-naivy);
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .contactType-comparison dl > dt::before{
+        content: '◉';
+        color:  #80C8EF;
+        padding-right: 5px;
+    }
+    .contactType-comparison p{
+        font-size: 1.6rem;
+        color: var(--color-naivy);
+        margin-bottom: 10px;
+        line-height: 1.8rem;
+    }
+    .contactType-comparison figure{
+        text-align: center;
+    }
+
+   a.linkButton{
+        display: grid;
+        place-items: center;
+        height: 220px;
+        background: #80C8EF;
+        text-align: center;
+        font-size: 1.8rem;
+        color: #fff;
+        letter-spacing: 0.15rem;
+        margin-top:30%;
+    }
+    a.linkButton > span > span{
+        margin-top: 5px;
+        display: block;
+        border: solid 1px #fff;
+        padding: 5px 20px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+/*beginner / beginner-start 
+-------------------------------------*/
+.beginner-start{
+
+}
+.beginner-start-inner{
+    max-width: 500px;
+}
+.beginnerStart-warning-title{
+    color:  #80C8EF;
+    font-size: 2.4rem;
+    position: relative;
+    letter-spacing: 0.1rem;
+    padding: 15px 15px 15px 60px;
+    margin-bottom: 20px;
+}
+    .beginnerStart-warning-title::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 0;
+        top:50%;
+        left: 0;
+        transform: translateY(-50%);
+        padding-bottom: 10%;
+        background: url('../images/icon_checkbox.png') no-repeat;
+        background-position: left;
+        background-size: auto 100%;
+    }
+ul.beginnerStart-warning-list{
+    margin-bottom: 30px;
+}
+ul.beginnerStart-warning-list  li{
+    color: var(--color-naivy);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 2.2rem;
+}
+    ul.beginnerStart-warning-list li::before{
+        content: '□';
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+ul.beginner-start-flow{
+    margin-bottom: 30px;
+}
+ul.beginner-start-flow li{
+    font-size: 1.8rem;
+    color: var(--color-naivy);
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 60px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+    ul.beginner-start-flow li::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 0;
+        top:50%;
+        left: 0;
+        transform: translateY(-50%);
+        padding-bottom: 10%;
+        background-image: var(--img);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: auto 100%;
+    }
+.beginner-start p{
+    color: var(--color-naivy);
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}

@@ -1,7 +1,10 @@
 :root{
     --color-black:#231815;
     --color-naivy:#004471;
+    --color-lightbule:#DAF0FC;
     --color-skyblue:#B1D2EF;
-    --color-blue:#4d9add;
+    --color-blue:#5386B9;
     --fsize-text:2.2rem;
+
+    --test:'../images/icon_cercle01.png';
 }
