@@ -21,7 +21,7 @@ section.news  h1::before{
     margin-right: 10px;
 }
 @media (max-width:600px) {
-    section h1{
+    section.news h1{
         padding:0px;
     }
     section h1::before{
