@@ -45,6 +45,15 @@ figure{
     background-size: auto 100%;
     background-position: right;
 }
+@media (max-width:600px) {
+    [class*=h-ribon]{
+        margin:0 20px;
+        font-size: 2.0rem;
+        text-align: center;
+        line-height: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
 
 [class*=-comparison]{
     display: flex;
@@ -66,6 +75,16 @@ figure{
         width: 70px;
         margin: 0 auto 20px;
     }
+
+@media (max-width:600px) {
+    [class*=-comparison]{
+        display: block;
+    }
+    [class*=-comparison] > div{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
 /*page beginner
 ---------------------*/
 /*page beginner / merit
@@ -106,7 +125,18 @@ ul.merit-list{
     ul.merit-list li h4{
         font-size: 2.4rem;
     }
+@media (max-width:600px) {
+    ul.merit-list li{
+        align-items: stretch;
+    }
+    ul.merit-list li figure{
+        height: 100px;
+    }
+    ul.merit-list li h4{
+        font-size: 1.6rem;
+    }
 
+}
 /*page beginner / softHead
 -------------------------------*/
 section.beginner-softHead{
@@ -207,6 +237,22 @@ section.beginner-contactType{
         font-size: 1.2rem;
         color: #fff;
     }
+@media (max-width:600px) {
+    .contactType-comparison p{
+        font-size: 1.5rem;
+    }
+    a.linkButton{
+        display: grid;
+        place-items: center;
+        height: 220px;
+        background: #80C8EF;
+        text-align: center;
+        font-size: 1.8rem;
+        color: #fff;
+        letter-spacing: 0.15rem;
+        margin-top:20px;
+    }
+}
 
 /*beginner / beginner-start 
 -------------------------------------*/
@@ -285,4 +331,168 @@ ul.beginner-start-flow li{
     color: var(--color-naivy);
     line-height: 2.2rem;
     font-size: 1.6rem;
+}
+@media (max-width:600px) {
+
+.beginnerStart-warning-title{
+        font-size: 2.0rem;
+    }
+    ul.beginnerStart-warning-list  li{
+        font-size: 1.6rem;
+    }
+    ul.beginner-start-flow li{
+        padding-left: 45px;
+        font-size: 1.7rem;
+    }
+}
+/*melsplan page / support
+--------------------------------------*/
+.melsplan-support{
+    margin-bottom: 60px;
+}
+.melsplan-support-inner{
+    max-width: 680px;
+}
+dl.melsplan-support-merit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+    dl.melsplan-support-merit dt,
+    dl.melsplan-support-merit dt{
+        margin-bottom: 40px;
+    }
+    dl.melsplan-support-merit dt{
+        flex-basis: 37%;
+    }
+    dl.melsplan-support-merit dd{
+        flex-basis: 60%;
+        font-weight: bold;
+        color: var(--color-naivy);
+    }
+    dl.melsplan-support-merit dd p{
+        font-size: 1.6rem;
+        line-height: 2.0rem;
+    }
+     dl.melsplan-support-merit dd span{
+        display: block;
+        font-size: 1.2rem;
+         font-weight: normal;
+         margin-top: 10px;
+     }
+     p.remarks{
+         background:  #80C8EF;
+         text-align: center;
+         padding: 10px;
+         color: #fff;
+         border-radius: 5px;
+         margin: 80px 0;
+         font-weight: bold;
+     }
+@media (max-width:600px){
+
+    dl.melsplan-support-merit dt{
+        flex-basis:100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    dl.melsplan-support-merit dt img{
+        max-width: 200px;
+    }
+    dl.melsplan-support-merit dd{
+        text-align: center;
+        flex-basis:100%;
+        margin-bottom: 30px;
+    }
+    dl.melsplan-support-merit dd:last-child{
+        margin-bottom: 0px;
+    }
+    p.remarks{
+        font-size: 1.6rem;
+        margin: 40px 0;
+        text-align: left;
+    }
+}
+/*melsplan page / membership
+--------------------------------------*/
+.melsplan-membership-inner{
+    max-width: 680px;
+}
+dl.melsplan-membership-flow{
+    background: #FFFAEC;
+    padding:40px 30px;
+    margin-bottom: 12%;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 10px;
+}
+    dl.melsplan-membership-flow::before{
+        content: '';
+        width: 96%;
+        height: 84%;
+        position: absolute;
+        border: 4px #80C8EF solid;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        z-index: 2;
+    }
+    dl.melsplan-membership-flow::after{
+        width: 100%;
+        height: 0;
+        padding-bottom: 6%;
+        background: url('../images/flow_arrow.svg') no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        content: '';
+        position: absolute;
+        bottom:-35%;
+        left: 0;
+    }
+    dl.melsplan-membership-flow:nth-child(4){
+        margin-bottom: 20px;
+    }
+        dl.melsplan-membership-flow:nth-child(4)::after{
+            display: none;
+        }
+
+    dl.melsplan-membership-flow dt{
+        flex-basis: 50%;
+        z-index: 3;
+    }
+    dl.melsplan-membership-flow dd{
+        flex-basis: 50%;
+        color: var(--color-naivy);
+        font-weight: bold;
+        font-size: 2.2rem;
+        z-index: 3;
+    }
+    p.melsplan-membership-memo{
+        color: var(--color-naivy);
+    }
+@media (max-width:600px){
+    dl.melsplan-membership-flow{
+        flex-wrap: wrap;
+    }
+    dl.melsplan-membership-flow dt,
+    dl.melsplan-membership-flow dd{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    dl.melsplan-membership-flow dt{
+        margin-bottom: 10px;
+    }
+    dl.melsplan-membership-flow dt img{
+        max-width: 160px;
+    }
+    dl.melsplan-membership-flow::after{
+        bottom:-20%;
+    }
+    p.melsplan-membership-memo{
+        font-size: 1.5rem;
+    }
 }

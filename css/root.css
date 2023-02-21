@@ -4,7 +4,8 @@
     --color-lightbule:#DAF0FC;
     --color-skyblue:#B1D2EF;
     --color-blue:#5386B9;
-    --fsize-text:2.2rem;
 
+    --fsize-text:2.2rem;
+    --fsize-text-sp:1.6rem;
     --test:'../images/icon_cercle01.png';
 }

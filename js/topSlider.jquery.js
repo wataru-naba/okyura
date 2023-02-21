@@ -21,6 +21,3 @@ $('.slick-dots').prependTo('.dots');
 
 $('.slick-slide.slick-current').removeClass('slick-current').addClass('my');
 
-$('.main_img').imagesLoaded(function(){
-	$('.my').addClass('slick-current');
-});

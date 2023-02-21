@@ -28,6 +28,9 @@ img{
     .topPage a:hover{
         background: var(--color-blue);
     }
+.fc-naivy{
+    color: var(--color-naivy);
+}
 /* header
 -------------------------*/
 .header-inner{
@@ -258,6 +261,28 @@ ul.footer-nav-list{
     padding: 10px 20px;
 }
 
+
+@media (max-width:770px) {
+    .footer-log{
+       max-width: 280px;
+       margin: 0 auto 20px;
+    }
+    .footer-address{
+        font-size: 1.3rem;
+    }
+    .footer-tel{
+        padding:0 20px;
+    }
+    ul.footer-nav-list li{
+        flex-grow: 2;
+    }
+    ul.footer-nav-list li a{
+        font-size: 1.3rem;
+    }
+    .copyright{
+        font-size: 1.2rem;
+    }
+}
 /*pageTop
 -----------------*/
 .pageTop{
@@ -275,6 +300,6 @@ ul.footer-nav-list{
 }
 
 @media (max-width:767px){
-	.pageTop{right:15px;bottom: 60px;}
-	.pageTop img{width:60px;}
+	.pageTop{right:15px;bottom: 20px;}
+	.pageTop img{width:40px;}
 }
