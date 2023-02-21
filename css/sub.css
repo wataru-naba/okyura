@@ -341,14 +341,18 @@ ul.beginner-start-flow li{
 @media (max-width:600px) {
 
 .beginnerStart-warning-title{
-        font-size: 2.0rem;
+        padding: 15px 15px 15px 45px;
+        font-size: 1.8rem;
     }
-    ul.beginnerStart-warning-list  li{
-        font-size: 1.6rem;
+    ul.beginnerStart-warning-list li{
+        font-size: 1.5rem;
     }
     ul.beginner-start-flow li{
         padding-left: 45px;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .beginner-start p{
+        font-size: 1.5rem;
     }
 }
 /*melsplan page / support
