@@ -177,6 +177,11 @@ h1.header-logo{
     transform: translateY(-6px) rotate(45deg);
     width: 40%;
 }
+@media (max-width:900px) and (min-width:787px) {
+    .header-nav{
+        flex-basis: 60%;
+    }
+}
 @media (max-width:786px) {
     h1.header-logo{
         padding-top: 15px;
