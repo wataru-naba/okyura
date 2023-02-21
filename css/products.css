@@ -421,3 +421,25 @@ i.type-2weeks{
         font-size: 0.8rem;
     }
 }
+
+
+p.remarks{
+    background:  #80C8EF;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    max-width: 600px;
+    margin: 80px auto 0;
+}
+
+@media (max-width:600px){
+
+    p.remarks{
+        width:90%;
+        font-size: 1.6rem;
+        margin: 40px auto;
+        text-align: left;
+    }
+}

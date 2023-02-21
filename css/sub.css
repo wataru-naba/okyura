@@ -263,9 +263,8 @@ section.beginner-contactType{
 
 /*beginner / beginner-start 
 -------------------------------------*/
-.beginner-start{
+.beginner-start{}
 
-}
 .beginner-start-inner{
     max-width: 500px;
 }
@@ -484,6 +483,9 @@ dl.melsplan-membership-flow{
     p.melsplan-membership-memo{
         color: var(--color-naivy);
     }
+.melsplan-membership .remarks{
+    margin-bottom: 0;
+}
 @media (max-width:600px){
     dl.melsplan-membership-flow{
         flex-wrap: wrap;
