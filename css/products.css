@@ -119,16 +119,25 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.makers dd{
+.makers dt{
     flex-basis: 5%;
 }
-.makers dt{
+.makers dd{
     flex-basis: 15%;
     font-size: 1.3rem;
     font-weight: bold;
     color: #004471;
 }
-@media (max-width:768px) {
+@media (max-width:768px) and (min-width:601px) {
+    .makers{
+        padding: 15px 5px;
+    }
+    .makers dd{
+        flex-basis: 18%;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:600px) {
     .products-navigation{
         padding: 20px 0;
     }
@@ -144,11 +153,11 @@
     .makers{
         justify-content: space-between;
     }
-    .makers dd{
+    .makers dt{
         flex-basis: 10%;
         margin-bottom: 10px;
     }
-    .makers dt{
+    .makers dd{
         box-sizing: border-box;
         padding-left:5px;
         flex-basis: 40%;
@@ -177,7 +186,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-32%,-50%);
-    width: 350px;
+    width: 500px;
 }
 .product-item-title[class*=icon]:before{
     content: '';
@@ -186,13 +195,45 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-380%,-50%);
+    transform: translate(-500%,-50%);
 }
 .product-item-title.icon-1day:before{
     background:url('../images/icon_1day.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
 }
+.product-item-title.icon-2weeks:before{
+    background:url('../images/icon_2weeks.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left;  
+}
+.product-item-title.icon-1month:before{
+    background:url('../images/icon_1month.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left;  
+}
+.product-item-title.icon-3month:before{
+    background:url('../images/icon_3month.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left;  
+}
+.product-item-title.icon-enkin:before{
+    background:url('../images/icon_enkin.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left;  
+}
+.product-item-title.icon-color:before{
+    background:url('../images/icon_color.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left;  
+}
+.product-item-title.icon-heard:before{
+    background:url('../images/icon_heard.png') no-repeat;
+    background-size: auto 100%;
+    background-position: left;  
+}
+/* product / product-items-list
+---------------------------------*/
 .product-items-list{
     display: flex;
     flex-wrap: wrap;
@@ -243,6 +284,8 @@
     .product-items-list li > .p_code::before{
         content: '医療機器承認番号:';
     }
+    /* プラン
+    ----------------*/
     .product-items-list li[class*=fixed-]::before{
         content: '';
         width: 95%;
@@ -257,6 +300,14 @@
         background-size: auto 100%;
         background-position: left;
     }
+    .product-items-list li.fixed-melsplanExc::before{
+        background:url('../images/melsplan_exc.png') no-repeat;
+        background-size: auto 100%;
+        background-position: left;
+        padding-bottom: 20%;
+    }
+/* メーカーicon
+----------------*/
     .product-items-list li[class*=meker-]::after{
         content: '';
         width: 95%;
@@ -281,20 +332,53 @@
         background-size: auto 100%;
         background-position: right;
     }
-    .product-items-list li.meker-jnh::after{
+    .product-items-list li.meker-jnj::after{
         background:url('../images/logo_jnj.png') no-repeat;
         background-size: auto 100%;
         background-position: right;
     }
+    .product-items-list li.meker-bausch::after{
+        background:url('../images/logo_bausch.png') no-repeat;
+        background-size: auto 100%;
+        background-position: right;
+        padding-bottom: 5%;
+        top: 5%;
+    }
+    .product-items-list li.meker-seed::after{
+        background:url('../images/logo_seed.png') no-repeat;
+        background-size: auto 100%;
+        background-position: right;
+    }
+/* type icon
+----------------*/
+i[class*=type-]{
+    position: absolute;
+    width: 95%;
+    padding-bottom:18%;
+    content: '';
+    top: 13%;
+    left: 3%;
+}
+i.type-1day{
+    background: url('../images/mark_1day.png') no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+}
+i.type-2weeks{
+    background: url('../images/mark_2week.png') no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+}
 @media (max-width:768px) {
     .product-item-title{
-        font-size: 2.0rem;
+        font-size: 1.6rem;
         height: 50px;
     }
     .product-item-title strong{
         width:100%;
         transform: translate(-50%,-50%);
-       text-align: center;
+        text-align: center;
+       
     }
     .product-item-title[class*=icon]:before{
         width: 42px;
@@ -302,19 +386,33 @@
         transform: translate(-400%,-50%);
     }
 
+    
+
+}
+
+@media (max-width:600px) {
     .product-items-list li{
-        height: 200px;
+        height: 240px;
         flex-basis: calc(50% - 1%);
     }
     .product-items-list li:nth-child(2n){
         margin-right: 0px;
     }
 
-}
-
-@media (max-width:600px) {
+    .product-item-title[class*=icon]:before{
+        left: 5%;
+        transform: translate(0%,-50%);
+    }
+    .product-item-title{
+        font-size: 1.5rem;
+        height: 50px;
+    }
+    .product-item-title strong{
+        text-align: left;
+        padding-left: 18%;
+    }
     .product-items-list li >.p_title{
-        bottom:15%;
+        bottom:10%;
         font-size: 1.0rem;
         font-weight: bold;
         width: 100%;

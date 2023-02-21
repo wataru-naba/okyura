@@ -12,7 +12,7 @@ figure{
 
 [class*=pageHeader] h1{
     text-align: center;
-    max-width: 770px;
+    max-width: 786px;
     margin: 0 auto;
 }
 
@@ -173,7 +173,11 @@ section.beginner-softHead{
         position: absolute;
         left: 0;
     }
-
+@media (max-width:600px) {
+    .softHead-comparison figure{
+        max-width: 200px;
+    }
+}
 /*page beginner / contactType
 -------------------------------*/
 
@@ -238,6 +242,9 @@ section.beginner-contactType{
         color: #fff;
     }
 @media (max-width:600px) {
+    .contactType-comparison h3{
+        font-size: 1.7rem;
+    }
     .contactType-comparison p{
         font-size: 1.5rem;
     }
@@ -400,6 +407,9 @@ dl.melsplan-support-merit{
     dl.melsplan-support-merit dt img{
         max-width: 200px;
     }
+    dl.melsplan-support-merit dd p{
+        font-size: 1.5rem;
+    }
     dl.melsplan-support-merit dd{
         text-align: center;
         flex-basis:100%;
@@ -485,6 +495,9 @@ dl.melsplan-membership-flow{
     }
     dl.melsplan-membership-flow dt{
         margin-bottom: 10px;
+    }
+    dl.melsplan-membership-flow dd{
+        font-size: 1.8rem;
     }
     dl.melsplan-membership-flow dt img{
         max-width: 160px;

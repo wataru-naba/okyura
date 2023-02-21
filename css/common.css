@@ -155,9 +155,12 @@ h1.header-logo{
     transform: translateY(-6px) rotate(45deg);
     width: 40%;
 }
-@media (max-width:770px) {
+@media (max-width:786px) {
+    h1.header-logo{
+        padding-top: 15px;
+    }
     .header-logo img{
-        max-height: 45px;
+        max-height: 50px;
     }
     .header-nav-btn{
         display: block;
@@ -186,6 +189,7 @@ h1.header-logo{
     }
     .header-nav ul li a{
         display: block;
+        font-size: 1.4rem;
         padding: 20px;
         color: #fff;
     }
@@ -207,7 +211,7 @@ h1.header-logo{
     .header-nav-info a{
         border: solid 1px #000;
         display: block;
-        padding-top: 55px;
+        padding-top: 40px;
         padding-bottom: 10px;
         font-size: 1.4rem;
         font-weight: bold;
@@ -219,7 +223,8 @@ h1.header-logo{
         background: url('../images/mail_navy.png') no-repeat;
         background-position: center;
         background-size: auto 100%;
-        transform: translate(0%, -80%);
+        top:20%;
+        transform: translate(0%,0);
     }
 }
 /* footer
@@ -262,7 +267,7 @@ ul.footer-nav-list{
 }
 
 
-@media (max-width:770px) {
+@media (max-width:786px) {
     .footer-log{
        max-width: 280px;
        margin: 0 auto 20px;

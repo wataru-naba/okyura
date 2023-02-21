@@ -71,7 +71,7 @@ section h1::before{
     }
     section h1::before{
         content: attr(data-en);
-        font-size: 3.0rem;
+        font-size: 2.4rem;
         margin-right: 10px;
     }
 }
@@ -109,8 +109,15 @@ a.news-btn:hover{
     background: var(--color-blue);
 }
 @media (max-width:600px) {
+    .news-list li{
+        padding: 15px;
+    }
     .news-list li a{
-        font-size:1.6rem
+        font-size:1.4rem
+    }
+    a.news-btn{
+        font-size: 1.5rem;
+        padding:8px 10px;
     }
 }
 /* information section
@@ -127,7 +134,7 @@ section.information p{
 }
 @media (max-width:600px) {
     section.information p{
-        font-size:1.6rem;
+        font-size:1.5rem;
         padding:0px;
     }
 }
@@ -193,6 +200,12 @@ section.open h1{
     }
 }
 @media (max-width:600px) {
+    section.open h1::after{
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
     .open-time{
         display: block;
     }
@@ -206,6 +219,7 @@ section.open h1{
             border-top: none;
         }
         .open-time dl:first-child dd{
+            font-size: 1.4rem;
             border-left: 2px var(--color-naivy) solid;
         }
         .open-time dl dt{
@@ -226,6 +240,7 @@ section.open h1{
             border-bottom:none
         }
     .open-time dl dd span{
+        font-size: 1.3rem;
         display: block;
     }
 
@@ -263,5 +278,6 @@ section.access h1{
         position: relative;
         display: block;
         margin-top: 10px;
+        font-size: 1.5rem;
     }
 }
