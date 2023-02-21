@@ -437,7 +437,7 @@ p.remarks{
 @media (max-width:600px){
 
     p.remarks{
-        width:90%;
+        width:calc(100% - 40px);
         font-size: 1.6rem;
         margin: 40px auto;
         text-align: left;
