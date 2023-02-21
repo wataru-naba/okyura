@@ -32,3 +32,24 @@ window.addEventListener('scroll',function(){
 }
 
 });   
+
+
+
+//------------------------------
+//商品スクロール
+//------------------------------
+
+
+
+$('.pn_box').on('click',function(){
+	var item_id = $(this).data('id');
+	var p = $(item_id).offset().top;
+	var space = 0;
+	if (window.innerWidth <= 768){
+		space = 80;
+	}else{
+		space = 105;
+	}
+	$('html,body').stop().animate({ scrollTop: p - space}, 400, 'easeOutCirc');
+	return false;
+});

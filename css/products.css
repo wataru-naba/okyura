@@ -33,9 +33,9 @@
         height: 60px;
         display: flex;
         align-items: center;
-        padding-left: 6%;
+        padding-left: 5%;
         border-radius: 8px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: bold;
         color: #004471;
         position: relative;
@@ -50,10 +50,10 @@
         content: '';
         width: 90%;
         height: 0;
-        padding-bottom: 19%;
+        padding-bottom: 17%;
         top: 50%;
         transform: translateY(-50%);
-        left: 2%;
+        left: 1%;
         position: absolute;
     }
     .products-nav > ul > li.icon-1day::before{
