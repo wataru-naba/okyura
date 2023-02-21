@@ -21,7 +21,7 @@ pageTop.addEventListener('click',scrollTop)
 
 window.addEventListener('scroll',function(){
 
-   if(window.pageYOffset > 150 && pageTopOn === 0){
+if(window.pageYOffset > 150 && pageTopOn === 0){
     pageTopOn = 1;
     pageTop.animate([{opacity: '0'}, {opacity: '1'}], 500)
     pageTop.classList.add('active')
@@ -34,22 +34,13 @@ window.addEventListener('scroll',function(){
 });   
 
 
+const bodyOffset = () => {
+    const headerEl = document.querySelector('header')
+    const bodyEl = document.querySelector('body')
+    bodyEl.style.paddingTop = headerEl.clientHeight+'px'
+}
 
-//------------------------------
-//商品スクロール
-//------------------------------
+window.addEventListener('load',bodyOffset)
+window.addEventListener('resize', bodyOffset);
 
 
-
-$('.pn_box').on('click',function(){
-	var item_id = $(this).data('id');
-	var p = $(item_id).offset().top;
-	var space = 0;
-	if (window.innerWidth <= 768){
-		space = 80;
-	}else{
-		space = 105;
-	}
-	$('html,body').stop().animate({ scrollTop: p - space}, 400, 'easeOutCirc');
-	return false;
-});

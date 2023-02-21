@@ -7,7 +7,8 @@ const productItemTitle = document.querySelectorAll('.product-item-title');
 const productItemTitleArr =  Array.from(productItemTitle)
 
 const scrollProduct = (index) => {
-    window.scroll({ top: productItemTitleArr[index].offsetTop, behavior: "smooth" });
+    const headerEl = document.querySelector('header')
+    window.scroll({ top: productItemTitleArr[index].offsetTop - headerEl.clientHeight, behavior: "smooth" });
 }
 
 productsNavLiArr.map((li,index)=>{
