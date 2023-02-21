@@ -39,8 +39,7 @@ const bodyOffset = () => {
     const bodyEl = document.querySelector('body')
     bodyEl.style.paddingTop = headerEl.clientHeight+'px'
 }
-
-window.addEventListener('load',bodyOffset)
+bodyOffset()
 window.addEventListener('resize', bodyOffset);
 
 
