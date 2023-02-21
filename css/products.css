@@ -98,12 +98,12 @@
     }
     .products-nav > ul > li::after{
         content: '';
-        width: 90%;
+        width: 97%;
         height: 0;
         padding-bottom: 4%;
         top: 50%;
         transform: translateY(-50%);
-        left: 2%;
+        left: 0%;
         position: absolute;
         background:url('../images/down_arrow.svg') no-repeat;
         background-size: auto 100%;
@@ -129,6 +129,9 @@
     color: #004471;
 }
 @media (max-width:768px) and (min-width:601px) {
+    .products-nav > ul > li{
+        font-size: 1rem;
+    }
     .makers{
         padding: 15px 5px;
     }
@@ -150,6 +153,7 @@
     .products-nav > ul > li:nth-child(2n){
         margin-right: 0px;
     }
+
     .makers{
         justify-content: space-between;
     }
