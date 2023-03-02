@@ -373,6 +373,10 @@ dl.melsplan-support-merit{
     dl.melsplan-support-merit dd{
         margin-bottom: 40px;
     }
+        dl.melsplan-support-merit dt:last-child,
+        dl.melsplan-support-merit dd:last-child{
+            margin-bottom: 0px;
+        }
     dl.melsplan-support-merit dt{
         flex-basis: 37%;
     }
@@ -402,31 +406,32 @@ dl.melsplan-support-merit{
          margin: 80px 0;
          font-weight: bold;
      }
+ 
 @media (max-width:600px){
-
-    dl.melsplan-support-merit dt{
-        flex-basis:100%;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    dl.melsplan-support-merit dt img{
-        max-width: 200px;
-    }
-    dl.melsplan-support-merit dd p{
-        font-size: 1.5rem;
-    }
+  
+    dl.melsplan-support-merit dt,
     dl.melsplan-support-merit dd{
-        text-align: center;
-        flex-basis:100%;
         margin-bottom: 30px;
     }
-    dl.melsplan-support-merit dd:last-child{
-        margin-bottom: 0px;
+    dl.melsplan-support-merit dd p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    dl.melsplan-support-merit dd span{
+        font-size: 0.9rem;
     }
     p.remarks{
-        font-size: 1.6rem;
-        margin: 40px 0;
+        padding:10px 5px;
+        font-size: 1.0rem;
+        margin: 30px 0;
+    }
+   
+}
+
+@media (max-width:415px){
+    p.remarks{
         text-align: left;
+        font-size: 0.8rem;
     }
 }
 /*melsplan page / membership
@@ -439,8 +444,8 @@ dl.melsplan-membership-flow{
     padding:40px 30px;
     margin-bottom: 12%;    
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content:flex-start;
     position: relative;
     border-radius: 10px;
 }
@@ -476,7 +481,7 @@ dl.melsplan-membership-flow{
         }
 
     dl.melsplan-membership-flow dt{
-        flex-basis: 50%;
+        flex-basis: 45%;
         z-index: 3;
     }
     dl.melsplan-membership-flow dd{
@@ -485,6 +490,9 @@ dl.melsplan-membership-flow{
         font-weight: bold;
         font-size: 2.2rem;
         z-index: 3;
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
     }
     p.melsplan-membership-memo{
         color: var(--color-naivy);
@@ -493,27 +501,47 @@ dl.melsplan-membership-flow{
     margin-bottom: 0;
 }
 @media (max-width:600px){
+    /*
     dl.melsplan-membership-flow{
         flex-wrap: wrap;
     }
+
     dl.melsplan-membership-flow dt,
     dl.melsplan-membership-flow dd{
         flex-basis: 100%;
         text-align: center;
     }
-    dl.melsplan-membership-flow dt{
-        margin-bottom: 10px;
+    */
+    dl.melsplan-membership-flow{
+        padding:30px 20px;
     }
+
     dl.melsplan-membership-flow dd{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
-    dl.melsplan-membership-flow dt img{
-        max-width: 160px;
-    }
-    dl.melsplan-membership-flow::after{
-        bottom:-20%;
-    }
+   
     p.melsplan-membership-memo{
         font-size: 1.5rem;
+    }
+    
+}
+@media (max-width:415px){
+    
+    dl.melsplan-membership-flow::after{
+        bottom: -25%;
+    }
+    dl.melsplan-membership-flow dt{
+        flex-basis: 40%;
+        z-index: 3;
+    }
+    dl.melsplan-membership-flow dd{
+        flex-basis: 60%;
+    }
+    dl.melsplan-membership-flow dd{
+        font-size: 1.4rem;
+    }
+    
+    p.melsplan-membership-memo{
+        font-size: 1.0rem;    
     }
 }
