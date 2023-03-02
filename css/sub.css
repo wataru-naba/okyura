@@ -367,10 +367,10 @@ dl.melsplan-support-merit{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
     dl.melsplan-support-merit dt,
-    dl.melsplan-support-merit dt{
+    dl.melsplan-support-merit dd{
         margin-bottom: 40px;
     }
     dl.melsplan-support-merit dt{
@@ -380,6 +380,8 @@ dl.melsplan-support-merit{
         flex-basis: 60%;
         font-weight: bold;
         color: var(--color-naivy);
+        display: flex;
+        align-items: center;
     }
     dl.melsplan-support-merit dd p{
         font-size: 1.6rem;

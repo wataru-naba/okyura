@@ -21,6 +21,10 @@ section.news  h1::before{
     font-size: 3.6rem;
     margin-right: 10px;
 }
+.new-inner{
+    padding-top: 60px;
+    max-width: 700px;
+}
 @media (max-width:600px) {
     section.news h1{
         padding:0px;
