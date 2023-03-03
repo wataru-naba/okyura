@@ -48,10 +48,15 @@ figure{
 @media (max-width:600px) {
     [class*=h-ribon]{
         margin:0 20px;
-        font-size: 2.0rem;
+        font-size: 1.6rem;
         text-align: center;
         line-height: 2.5rem;
         margin-bottom: 20px;
+    }
+}
+@media (max-width:400px) {
+    [class*=h-ribon]{
+        font-size: 1.4rem;
     }
 }
 
@@ -126,6 +131,9 @@ ul.merit-list{
         font-size: 2.4rem;
     }
 @media (max-width:600px) {
+    ul.merit-list{
+        margin-top: -30px;
+    }
     ul.merit-list li{
         align-items: stretch;
     }
@@ -249,15 +257,9 @@ section.beginner-contactType{
         font-size: 1.5rem;
     }
     a.linkButton{
-        display: grid;
-        place-items: center;
-        height: 220px;
-        background: #80C8EF;
-        text-align: center;
-        font-size: 1.8rem;
-        color: #fff;
-        letter-spacing: 0.15rem;
+        height: 180px;
         margin-top:20px;
+      
     }
 }
 
@@ -403,7 +405,7 @@ dl.melsplan-support-merit{
          padding: 10px;
          color: #fff;
          border-radius: 5px;
-         margin: 80px 0;
+         margin: 40px 0;
          font-weight: bold;
      }
  
@@ -414,15 +416,15 @@ dl.melsplan-support-merit{
         margin-bottom: 30px;
     }
     dl.melsplan-support-merit dd p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
     }
     dl.melsplan-support-merit dd span{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     p.remarks{
         padding:10px 5px;
-        font-size: 1.0rem;
+        font-size: 0.9rem;
         margin: 30px 0;
     }
    
@@ -430,7 +432,6 @@ dl.melsplan-support-merit{
 
 @media (max-width:415px){
     p.remarks{
-        text-align: left;
         font-size: 0.8rem;
     }
 }
@@ -526,9 +527,11 @@ dl.melsplan-membership-flow{
     
 }
 @media (max-width:415px){
-    
+    dl.melsplan-membership-flow{
+        padding:15px 20px;
+    }
     dl.melsplan-membership-flow::after{
-        bottom: -25%;
+        bottom: -40%;
     }
     dl.melsplan-membership-flow dt{
         flex-basis: 40%;
@@ -538,7 +541,7 @@ dl.melsplan-membership-flow{
         flex-basis: 60%;
     }
     dl.melsplan-membership-flow dd{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     p.melsplan-membership-memo{
