@@ -16,6 +16,7 @@ body{
     position: relative;
     overflow: hidden;
 }
+
 .slider .wrap{
     display:block;
     max-width:800px;
@@ -29,12 +30,13 @@ body{
     position:absolute;
     cursor:pointer;
     height:0;
-    width:100%;
-    padding-bottom: 15%;
+    width:10%;
+    padding-bottom: 10%;
     content: '';
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    z-index: 1;
 }
 .pn.top-prev{
     background: url('../images/slide_prev.svg') no-repeat;
@@ -45,9 +47,13 @@ body{
     background: url('../images/slide_next.svg') no-repeat;
     background-position: right;
     background-size: auto 100%;
+    left: 90%;
 }
 
 @media (max-width:600px) {
+    .pn{
+        padding-bottom: 15%;
+    }
     .slider .wrap{
         padding: 20px;
     }
@@ -196,60 +202,37 @@ section.open h1{
             font-size: 1.4rem;
         }
 @media (max-width:900px) and (min-width:601px) {
+
+    .open-time dl dd{
+        height: 30px;
+    }
     .open-time dl dd span{
         display: block;
-    }
-    .open-time dl dd {
-        height: 30px;
-    
     }
 }
 @media (max-width:600px) {
     section.open h1::after{
-        position: relative;
-        display: block;
-        margin-top: 10px;
-        font-size: 1.5rem;
-    }
-    .open-time{
-        display: block;
-    }
-    .open-time dl{
-        display: flex;
-        justify-content: space-between;
-        border: none;
-    }
-        .open-time dl:first-child dt,
-        .open-time dl:first-child dd{
-            border-top: none;
-        }
-        .open-time dl:first-child dd{
-            font-size: 1.4rem;
-            border-left: 2px var(--color-naivy) solid;
-        }
-        .open-time dl dt{
-            flex-basis:  20%;
-            border-top: 2px var(--color-naivy) solid;
-            background: #EBE3C7;
-            border-bottom: none;
-            border-left: none;
-        }
-        .open-time dl dd{
-            flex-basis:  40%;
-            border: none;
-            border-radius: 0;
-            border-top: 2px var(--color-naivy) solid;
-            border-left: 2px var(--color-naivy) solid;
-        }
-        .open-time dl dd:nth-child(2){
-            border-bottom:none
-        }
-    .open-time dl dd span{
         font-size: 1.3rem;
-        display: block;
     }
-
+    .open-time dl dt,
+    .open-time dl dd{
+        padding:15px 0px;
+        font-size: 1.2rem;
+    }
+    .open-time dl dd{
+        height: 20px;
+    }
+    .open-time dl dd span{
+        display: block;
+        font-size: 0.9rem;
+    }
     
+}
+@media (max-width:400px) {
+    .open-time dl dt,
+    .open-time dl dd{
+        font-size: 1.0rem;
+    }
 }
 /*section access
 -------------------------*/
@@ -280,9 +263,21 @@ section.access h1{
 
 @media (max-width:600px) {
     section.access h1::after{
+        font-size: 1.3rem;
+    }
+    .gmap{
+        position: relative;
+        width: 100%;
+        padding-bottom: 90%;
+    }
+}
+
+@media (max-width:415px) {
+    section.access h1::after{
         position: relative;
         display: block;
         margin-top: 10px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        text-align:right;
     }
 }
