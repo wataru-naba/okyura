@@ -178,61 +178,61 @@
 .product-item-title{
     background: url('../images/bk_stripe.svg');
     background-size: auto 400px;
-    padding: 10px 25px;
+    padding: 15px 25px;
     font-weight: bold;
     color: #004471;
-    font-size: 2.4rem;
-    letter-spacing: 0.1rem;
-    position: relative;
-    height: 60px;
+    display: grid;
+    place-items: center;
 }
 .product-item-title strong{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-32%,-50%);
-    width: 500px;
+   height: 100%;
+   display: inline-block;
+   font-size: 2.4rem;
+   letter-spacing: 0.1rem;
+   position: relative;
+   width: 500px;
 }
-.product-item-title[class*=icon]:before{
+
+.product-item-title[class*=icon] strong:before{
     content: '';
     width: 45px;
     height: 45px;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-500%,-50%);
+    left: -55px;
+    transform: translate(0%,-50%);
 }
-.product-item-title.icon-1day:before{
+.product-item-title.icon-1day strong:before{
     background:url('../images/icon_1day.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
 }
-.product-item-title.icon-2weeks:before{
+.product-item-title.icon-2weeks strong:before{
     background:url('../images/icon_2weeks.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
 }
-.product-item-title.icon-1month:before{
+.product-item-title.icon-1month strong:before{
     background:url('../images/icon_1month.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
 }
-.product-item-title.icon-3month:before{
+.product-item-title.icon-3month strong:before{
     background:url('../images/icon_3month.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
 }
-.product-item-title.icon-enkin:before{
+.product-item-title.icon-enkin :before{
     background:url('../images/icon_enkin.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
 }
-.product-item-title.icon-color:before{
+.product-item-title.icon-color :before{
     background:url('../images/icon_color.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
 }
-.product-item-title.icon-heard:before{
+.product-item-title.icon-heard strong:before{
     background:url('../images/icon_heard.png') no-repeat;
     background-size: auto 100%;
     background-position: left;  
@@ -375,24 +375,24 @@ i.type-2weeks{
     background-size: auto 100%;
 }
 @media (max-width:768px) {
+    /*
     .product-item-title{
         font-size: 1.6rem;
         height: 50px;
     }
     .product-item-title strong{
         width:100%;
-        transform: translate(-50%,-50%);
         text-align: center;
-       
+     
+        left: 0;
+        transform: translate(0,-50%);
     }
     .product-item-title[class*=icon]:before{
         width: 42px;
         height: 42px;
         transform: translate(-400%,-50%);
     }
-
-    
-
+*/
 }
 
 @media (max-width:600px) {
@@ -404,17 +404,15 @@ i.type-2weeks{
         margin-right: 0px;
     }
 
-    .product-item-title[class*=icon]:before{
-        left: 5%;
-        transform: translate(0%,-50%);
-    }
-    .product-item-title{
-        font-size: 1.5rem;
-        height: 50px;
+    .product-item-title[class*=icon] strong:before{
+        width: 42px;
+        height: 42px;
+        left: -50px;
     }
     .product-item-title strong{
         text-align: left;
-        padding-left: 18%;
+        width: auto;
+        font-size: 1.5rem;
     }
     .product-items-list li >.p_title{
         bottom:10%;
@@ -427,6 +425,18 @@ i.type-2weeks{
     }
 }
 
+@media (max-width:400px) {
+    .product-item-title[class*=icon] strong:before{
+        width: 34px;
+        height: 34px;
+        left: -40px;
+    }
+    .product-item-title strong{
+        text-align: left;
+        width: auto;
+        font-size: 1.3rem;
+    }
+}
 
 p.remarks{
     background:  #80C8EF;

@@ -265,7 +265,6 @@ section.beginner-contactType{
 
 /*beginner / beginner-start 
 -------------------------------------*/
-.beginner-start{}
 
 .beginner-start-inner{
     max-width: 500px;
@@ -502,17 +501,7 @@ dl.melsplan-membership-flow{
     margin-bottom: 0;
 }
 @media (max-width:600px){
-    /*
-    dl.melsplan-membership-flow{
-        flex-wrap: wrap;
-    }
 
-    dl.melsplan-membership-flow dt,
-    dl.melsplan-membership-flow dd{
-        flex-basis: 100%;
-        text-align: center;
-    }
-    */
     dl.melsplan-membership-flow{
         padding:30px 20px;
     }
