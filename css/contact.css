@@ -1,0 +1,127 @@
+@import url('./root.css');
+
+section.contact{
+    margin-top: 80px;
+}
+.form{
+    padding: 20px;
+}
+.form textarea{
+    border: 1px solid #ccc;
+    width: 90%;
+    min-height: 200px;
+}
+.form [id*='_err']{
+    display: none;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    color: #b92946;
+}
+.form [id*='_err'].err_on{
+    display: block;
+
+}
+
+dl.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+dl.contact-form dt,
+dl.contact-form dd{
+    box-sizing: border-box;
+}
+    dl.contact-form dt{
+        flex-basis: 20%;
+        padding: 10px;
+        background-color: #e7e7e7;
+        border-bottom: 1px solid #fff;
+        letter-spacing: 0.1rem;
+        font-weight: bold;
+    }
+    dl.contact-form dt label{
+        display: block;
+    }
+    dl.contact-form dt span.required{
+        background-color: #b92946;
+        display: inline-block;
+        margin:8px 0;
+        padding:2px 8px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+        color: #fff;
+        font-weight: normal;
+    }   
+dl.contact-form dd{
+    flex-basis: 80%;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+.privacy{
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+.privacy [type=checkbox]{
+    width: 25px;
+    height: 25px;
+}
+.form [type=submit]{
+    border-radius: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    background: var(--color-naivy);
+    outline:0;
+
+}
+.form [type=submit]:hover{
+    background:var(--color-blue);
+}
+
+.sitemap-list{
+    margin-bottom: 20px;
+}
+.sitemap-list li{
+    padding: 20px;
+    border-bottom: 1px var(--color-naivy) solid;
+}
+    .sitemap-list li:first-child{
+        border-top: 1px var(--color-naivy) solid;
+    }
+    .sitemap-list li span.date{
+        padding-right: 20px;
+    }
+.sitemap-prevnext{
+    display: flex;
+    justify-content: space-between;
+}
+a.sitemap-btn{
+    background: var(--color-skyblue);
+    padding:10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+a.sitemap-btn:hover{
+    background: var(--color-blue);
+}
+@media (max-width:600px) {
+    .sitemap-list li{
+        padding: 15px;
+    }
+    .sitemap-list li a{
+        font-size:1.4rem
+    }
+    a.sitemap-btn{
+        font-size: 1.5rem;
+        padding:8px 10px;
+    }
+}
