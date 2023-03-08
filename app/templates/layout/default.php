@@ -31,7 +31,7 @@
                 <li><a href="./products.html">取扱商品</a></li>
                 <li><a href="./melsplan.html">メルスプラン</a></li>
             </ul>
-            <div class="header-nav-info"><a href="" class="">お問い合わせ</a></div>
+            <div class="header-nav-info"><a href="./app">お問い合わせ</a></div>
         </nav>
         <div class="header-nav-btn"><p>menu</p><span></span><span></span><span></span></div>
     </div>
