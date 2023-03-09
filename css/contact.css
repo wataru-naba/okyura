@@ -125,3 +125,15 @@ a.sitemap-btn:hover{
         padding:8px 10px;
     }
 }
+
+
+.privacyPoricy{border:1px solid #000;padding:10px;margin-top:30px;}
+.privacyPoricy .inner{line-height:1.5;padding:20px 30px;overflow-y:scroll;height:220px;}
+/*
+.privacy .inner::-webkit-scrollbar{width:10px;}
+.privacy .inner::-webkit-scrollbar-track{background:#eee;}
+.privacy .inner::-webkit-scrollbar-thumb{background:#7fcef4;}
+*/
+.privacyPoricy ul{margin-bottom:20px;}
+.privacyPoricy ul>li{margin-bottom:15px;}
+.privacyPoricy ul>li:last-child{margin-bottom:0;}

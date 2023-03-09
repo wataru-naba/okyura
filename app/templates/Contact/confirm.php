@@ -34,7 +34,7 @@ $this->assign('title', 'お問い合せフォーム | ');
                      <?= nl2br($this->request->getData('message'))?>
                      <?= $this->Form->control('message',['label'=>false,'type'=>'hidden'])?> 
                 </dd>
-                <dt><label>プライバシー<br/>ポリシー</label><span class="required">必須</span></dt>
+                <dt><label>個人情報保護方針</label><span class="required">必須</span></dt>
                 <dd>
                     同意します。
                 </dd>
