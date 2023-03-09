@@ -407,6 +407,12 @@ dl.melsplan-support-merit{
          margin: 40px 0;
          font-weight: bold;
      }
+     p.remarks a{
+        color: #fff;
+     }
+     p.remarks a:hover{
+        border-bottom: solid 1px #fff;
+     }
  
 @media (max-width:600px){
   
