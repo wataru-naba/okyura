@@ -62,16 +62,15 @@ class ContactForm extends Form{
 		// メールを送信する
 		$email = new Email('default');
 		$email->setEmailFormat('both')
-        		->setFrom(Configure::read('email'),Configure::read('name'))
+        		->setFrom('noreplay@ocu-contact.jp',Configure::read('name'))
         		->setTo($data['email'])
         		->setSubject('お問い合わせメール-控え- '.Configure::read('name'))
         		->send($body);
 
 		$email = new Email('default');
 		$email->setEmailFormat('both')
-        		->setFrom(Configure::read('email'),Configure::read('name'))
+        		->setFrom('noreplay@ocu-contact.jp',Configure::read('name'))
         		->setTo(Configure::read('email'))
-        		->setBcc('wataru@hyuga.jp')
         		->setSubject($data['name'].'様よりお問い合わせメールが届いています | '.Configure::read('name'))
         		->send($body);
 

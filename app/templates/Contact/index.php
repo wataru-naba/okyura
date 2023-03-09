@@ -6,7 +6,7 @@ $this->assign('script', '<script src="./js/formValidation.js"></script>');
 <section class="contact">
     <div class="contact-inner">
         <h1 data-en="Contact">お問い合わせ</h1>
-        <?= $this->Form->create($contact,['class'=>'form','id'=>"mail_form",'enctype'=>'multipart/form-data']);?>
+        <?= $this->Form->create($contact,['class'=>'form','id'=>"f-form",'enctype'=>'multipart/form-data']);?>
             <?= $this->Form->control('confirm',['label'=>false,'type'=>'hidden','value'=>'confirm'])?>
             <dl class="contact-form">
                 <dt><label>お名前</label><span class="required">必須</span></dt>

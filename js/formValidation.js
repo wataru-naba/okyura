@@ -78,10 +78,12 @@ window.addEventListener('DOMContentLoaded',function(){
 	const formSubmit = document.getElementById('f-form');
 	
 	formSubmit.onsubmit = function(){
+		
 		let errItems = schema.filter((item) => {
 			return item.release === false && item.require === true;
 		});
-
+		console.log(errItems);
+		
 		return errItems.length === 0 ? true : false;
 		
 	};
